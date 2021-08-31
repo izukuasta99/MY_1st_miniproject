@@ -1,0 +1,33 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: tan;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+input[type="text"],input[type="password"]{
+    padding: 15px 75px;
+    margin-left: 90px;
+    margin-top: 15px;;
+    margin:10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    padding:15px 120px;
+    margin-left: 10px;
+    font-family: cursive;
+    background-color: tomato;
+    border-radius: 10px;
+}
+html{
+    background-color: sandybrown;
+}
+
+h1{
+    margin-left: 540px;
+    font-family: cursive;
+}

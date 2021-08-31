@@ -1,0 +1,41 @@
+.c{
+    width:500px;
+    height: 450px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: tan;
+    border-radius: 10px;
+}
+
+form{
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+input[type="text"]{
+    padding:15px 50px;
+    margin: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+input[type="submit"]{
+    padding: 15px 120px;
+    margin: 5px;
+    margin-right: 100px;
+    font-family: cursive;
+    background-color: tomato;
+
+}
+input{
+    border-radius: 10px;
+    margin-top: 0px;
+    padding:10px;
+}
+html{
+    background-color: sandybrown;
+}
+h1{
+    margin-left: 480px;
+    margin-top: 0px;
+    font-family: cursive;
+}

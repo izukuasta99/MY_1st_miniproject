@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="shortcut icon" href="train picture 1.jpg">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Noto+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h1>RAILWAY TICKET BOOKING SYSTEM</h1>
+        </header>
+        <section>
+        <div class="container">
+            <h1>LOGIN</h1>
+            <input type="text" name="username" placeholder="USERNAME" id="user"><br/>
+            <input type="password" name="password" placeholder="PASSWORD" id="pass"><br/>
+            <input type="submit" value="SUBMIT" onclick="login()">
+            <input type="submit" value="REGISTER" onclick="register()">
+        </div>
+        <section>
+            <script type="text/javascript">const getobject =[
+                {
+                    user: "a",
+                    pass: "a"
+                },
+                {
+                    user: "0",
+                    pass: "0"
+                },
+                {
+                    user: "kiran",
+                    pass: "kiran"
+                }
+            ]
+            function login()
+            {
+            const user = document.getElementById('user').value;
+            const pass = document.getElementById('pass').value;
+            //const user = window.prompt("enter user name:");
+            //const pass = window.prompt("enter password:");
+
+        
+            for(i=0; i< getobject.length; ++i)
+            {
+                if(user==getobject[i].user && pass == getobject[i].pass)
+                {
+                    window.location="http://127.0.0.1:5500/book.html";
+                    return    
+                }
+                
+            }
+            window.alert("wrong username or password");
+            }
+            function register(){
+                const newuser=window.prompt("REGISTER\nenter ur name:")
+                const newpass=window.prompt("enter ur password:")
+                const  newreg = {
+                    user: newuser,
+                    pass: newpass
+                }
+                getobject.push(newreg);
+                window.alert("registered successfully") 
+        
+            }</script>
+    </body>
+</html>
